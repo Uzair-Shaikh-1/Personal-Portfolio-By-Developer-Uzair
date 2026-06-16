@@ -181,7 +181,7 @@ body.dark-theme {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     max-width: 1120px;
-    margin-inline: 1.5rem;
+    margin-inline: 5px;
 }
 
 .grid {
@@ -646,27 +646,6 @@ nav {
     transform: translateY(-5px);
 }
 
-/* Makes sure the video container cuts off the top title text */
-.work__link .video-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 200px;
-    /* Adjust based on your card img heights */
-    overflow: hidden;
-    border-radius: 1rem;
-}
-
-/* Forces the iframe canvas wider/taller to push YouTube's headers out of view */
-.work__link .video-wrapper iframe {
-    position: absolute;
-    top: -46px;
-    /* Pushes the title bar up and away */
-    left: 0;
-    width: 100%;
-    height: calc(100% + 92px);
-    /* Corrects height balance */
-}
 
 .work__title {
     font-size: var(--h2-font-size);
@@ -941,6 +920,8 @@ nav {
 
 /* For medium devices */
 @media screen and (min-width:576px) {
+
+
     .services_container {
         grid-template-columns: 320px;
         justify-content: center;
@@ -951,7 +932,7 @@ nav {
     } */
 
     .work__container {
-        grid-template-columns: 350px;
+        grid-template-columns: 300px;
         justify-content: center;
     }
 
